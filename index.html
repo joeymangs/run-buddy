@@ -7,73 +7,73 @@
 </head>
 
 <body>
-        <!-- navigation -->
-    <header>
-        <h1><a href="/"></a>RUN BUDDY</h1>
-            <nav>
-                <!-- Unordered list element -->
-                <ul>
-                    <!-- List item element-->
-                    <li>
-                        <!-- Anchor element -->
-                        <a href="#what-we-do">What We Do</a>
-                    </li>
-                    <li>
-                        <a href="#what-you-do">What You Do</a>
-                    </li>
-                    <li>
-                        <a href="your-trainers">Your Trainers</a>
-                    </li>
-                    <li>
-                        <a href="reach-out">Reach Out</a>
-                    </li>
-                </ul>
-            </nav>
-    </header>
+            <!-- navigation -->
+        <header>
+            <h1><a href="/"></a>RUN BUDDY</h1>
+                <nav>
+                    <!-- Unordered list element -->
+                    <ul>
+                        <!-- List item element-->
+                        <li>
+                            <!-- Anchor element -->
+                            <a href="#what-we-do">What We Do</a>
+                        </li>
+                        <li>
+                            <a href="#what-you-do">What You Do</a>
+                        </li>
+                        <li>
+                            <a href="your-trainers">Your Trainers</a>
+                        </li>
+                        <li>
+                            <a href="reach-out">Reach Out</a>
+                        </li>
+                    </ul>
+                </nav>
+        </header>
 
-    <!-- hero/jumbotron -->
-    <section class="hero">
+        <!-- hero/jumbotron -->
+        <section class="hero">
 
-        <div>
-            <div class="hero-form">
-                <form>
-                    <h3>Get Started Today!</h3>
-                    <p>Fill out this form and one of our trainers will schedule a consultation</p>
-            <!-- Add form element here -->
+            <div>
+                <div class="hero-form">
+                    <form>
+                        <h3>Get Started Today!</h3>
+                        <p>Fill out this form and one of our trainers will schedule a consultation</p>
+                <!-- Add form element here -->
+                
+                        <label for="name">Enter full name:</label>
+                        <input type="text" placeholder="Your Name" name="name" id="name" class="form-input"/>
+                                
+                        <label for="phone">Enter a telephone number:</label>
+                        <input type="tel" placeholder="Phone Number" name="phone" id="phone" class="form-input"/>
             
-                    <label for="name">Enter full name:</label>
-                    <input type="text" placeholder="Your Name" name="name" id="name" class="form-input"/>
-                            
-                    <label for="phone">Enter a telephone number:</label>
-                    <input type="tel" placeholder="Phone Number" name="phone" id="phone" class="form-input"/>
-        
-                    <label for="email">Enter email address:"</label>
-                    <input type="email" placeholder="Email Address" name="Email Address" id="email" class="form-input"/>
-                    <p>
-                        <!-- insert radio button yes or no here -->
-                        Have you worked out with a trainer before?
-                        <input type="radio" name="trainer-confirm" id="trainer-yes" />
-                        <label for="trainer-yes">Yes</label>
-                        <input type="radio" name="trainer-confirm" id="trainer-no" />
-                        <label for="trainer-no">No</label>
-                    </p>
-                        <!-- age acknowledgement here-->
-                    <p>
-                    <label for="checkbox" >
-                            I acknowledge that I am at least 18 years of age.
-                        </label>
-                        <input type="checkbox" name="age-confirm" id="checkbox" />
-                    </p>
-                    <button type="submit">
-                        Get running!
-                    </button>
-                </form>
+                        <label for="email">Enter email address:"</label>
+                        <input type="email" placeholder="Email Address" name="Email Address" id="email" class="form-input"/>
+                        <p>
+                            <!-- insert radio button yes or no here -->
+                            Have you worked out with a trainer before?
+                            <input type="radio" name="trainer-confirm" id="trainer-yes" />
+                            <label for="trainer-yes">Yes</label>
+                            <input type="radio" name="trainer-confirm" id="trainer-no" />
+                            <label for="trainer-no">No</label>
+                        </p>
+                            <!-- age acknowledgement here-->
+                        <p>
+                        <label for="checkbox" >
+                                I acknowledge that I am at least 18 years of age.
+                            </label>
+                            <input type="checkbox" name="age-confirm" id="checkbox" />
+                        </p>
+                        <button type="submit">
+                            Get running!
+                        </button>
+                    </form>
+                </div>
             </div>
-        </div>
-    </section> 
+        </section> 
 
-        
-   
+            
+    
 
         <!-- "what we do" section -->
         <section id ="what-we-do" class="intro">
@@ -113,8 +113,47 @@
         </section>
   
         <!-- "meet the trainers" section -->
-        <section>
-            <h2>Meet The Trainers</h2>
+        <section id="your-trainers" class="trainers">
+            <h2 class="section-title primary-border">
+                Meet The Trainers
+            </h2>
+            <article class="trainer">
+                <img src="./assets/images/trainer-1.jpg" alt="Arron Stephens in his workout clothes, ready to pump iron" />
+                <div class="trainer-bio text-left">
+                    <h3>Arron Stephens</h3>
+                    <h4>Speed / Strength</h4>
+                    <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate commodi saepe culpa sed
+                    itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis repellat!
+                     </p>
+                </div>
+            </article>
+
+            <!-- second trainer bio -->
+            <article class="trainer">
+                <div class="trainer-bio text-right">
+                    <h3>Joanna Gill</h3>
+                    <h4>Endurance</h4>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate commodi saepe culpa sed
+                        itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis repellat!
+                    </p>
+                </div>
+                <img src="./assets/images/trainer-2.jpg" alt="Joanna Gill cooling off after a workout" />
+            </article>
+
+            <!-- thrid trainer bio -->
+            <article class="trainer">
+                <img src="./assets/images/trainer-3.jpg" alt="Harry Smith wearing a headband and lifting comically small pink weights." />
+                <div class="trainer-bio text-left">
+                    <h3>Harry "the Headband" Smith</h3>
+                    <h4>Strength</h4>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate commodi saepe culpa sed
+                    itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis repellat!
+                    </p>
+                </div>
+            </article>
         </section>
   
         <!-- "reach out" section -->
